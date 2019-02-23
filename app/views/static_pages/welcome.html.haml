@@ -2,6 +2,9 @@
   .col-lg-6
     .container
       %p
+      %p
+      %p
+      %p
         %b Word plugin to autocomplete text based on previous documents.
       %li Spend less time on scrolling past documents.
       %li Find relevant information 30% faster.
@@ -20,6 +23,8 @@
       %li - Have access to the product for free for 1 year after launch.
       %li - No launch? Money back guarantee!
   .col-lg-6
+    .text-center
+      %h1 How it works:
     .embed-responsive.embed-responsive-16by9
       %iframe.embed-responsive-item{:allow => "autoplay; encrypted-media", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube-nocookie.com/embed/yJP6Hd_SzyA?controls=0", :width => "560"}
     .navbar.nav.bg-primary.text-white We are launching in mid-2019
@@ -35,6 +40,9 @@
   %h1 How it looks:
 = image_tag "https://i.imgur.com/92Z3cy7.png", style: 'height:auto;width:100%;'
 
+.text-center
+  %h1 Our team:
+= image_tag "https://i.imgur.com/udKd3iX.jpg", style: 'height:auto;width:100%;'
 
 .row
 </div>
@@ -45,7 +53,7 @@
   %ul.list-unstyled.list-inline.text-center.py-2
     %li.list-inline-item
       %h5.mb-1 Ready to get started?
-    = link_to 'Get started for free', root_path, class: 'btn btn-lg btn-primary'
+    = link_to 'Subscribe & be first to know when we launch!', new_lead_path, class: 'btn btn-lg btn-primary'
 
   / Call to action
   %hr/
