@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title InteliLex
+    %title inteliLex
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
@@ -12,7 +12,7 @@
     .navbar.nav.bg-primary.text-center.text-white
       %a.navbar-brand{:href => "/"} 
         .text-white
-          %h1 InteliLex.ai  
+          %h1 inteliLex.ai  
       /autotext
       = link_to 'Subscribe for our secret news and beta', new_lead_path, class: 'btn btn-warning'
 
