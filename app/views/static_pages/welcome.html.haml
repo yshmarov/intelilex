@@ -1,9 +1,6 @@
-.card.bg-primary.text-center.text-white
-  %h1 InteliLex.ai  
-%br
 .row
-  .col-6
-    %center
+  .col-lg-6
+    .container
       %p
         %b Word plugin to autocomplete text based on previous documents.
       %p - Spend less time on scrolling on past documents.
@@ -20,18 +17,20 @@
         %input{:name => "hosted_button_id", :type => "hidden", :value => "US2K8TGRFR5CA"}/
         %input{:alt => "Donate with PayPal button", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/PL/i/btn/btn_donateCC_LG.gif", :title => "PayPal - The safer, easier way to pay online!", :type => "image"}/
         %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypal.com/en_PL/i/scr/pixel.gif", :width => "1"}/
-  .col-6
-    %b Autotext examples:
-    /.embed-responsive.embed-responsive-16by9
-    /  %iframe.embed-responsive-item{:allow => "autoplay; encrypted-media", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/-Yjx9eAiI2E?rel=0", :width => "560"}
-    %br
-    Google docs:
-    = image_tag "https://i.imgur.com/E00GzbD.png", style: 'height:auto;width:100%;'
-    %p
-    Word:
-    = image_tag "https://i.imgur.com/DRWyS8E.png", style: 'height:auto;width:100%;'
-.row
+  .col-lg-6
+    .embed-responsive.embed-responsive-16by9
+      %iframe.embed-responsive-item{:allow => "autoplay; encrypted-media", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube-nocookie.com/embed/yJP6Hd_SzyA?controls=0", :width => "560"}
+      /https://youtu.be/yJP6Hd_SzyA
+      /%iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube-nocookie.com/embed/yJP6Hd_SzyA?controls=0", :width => "560"}
 
+    /%br
+    /Google docs:
+    /= image_tag "https://i.imgur.com/E00GzbD.png", style: 'height:auto;width:100%;'
+    /%p
+    /Word:
+    /= image_tag "https://i.imgur.com/DRWyS8E.png", style: 'height:auto;width:100%;'
+.row
+</div>
 %footer.page-footer.font-small.stylish-color-dark.pt-4.mt-4
 .bg-dark.text-white
   %hr.bg-light
