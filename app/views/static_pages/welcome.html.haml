@@ -1,0 +1,104 @@
+.card.bg-primary.text-center.text-white
+  %h1 InteliLex.ai  
+%br
+.row
+  .col-6
+    %center
+      %p
+        %b Word plugin to autocomplete text based on previous documents.
+      %p - Spend less time on scrolling on past documents.
+      %p - Find relevant information 30% faster.
+      %hr/
+      %p We are launching in mid-2019
+      %p By donating, you will:- Be first to try.
+      %p - Be first to try the beta and alpha versions.
+      %p - Get updates on our daily work towards the launch.
+      %p - Have access to the product for free for 1 year after launch.
+      %p - No launch? Money back guarantee!
+      %form{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :target => "_top"}
+        %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}/
+        %input{:name => "hosted_button_id", :type => "hidden", :value => "US2K8TGRFR5CA"}/
+        %input{:alt => "Donate with PayPal button", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/PL/i/btn/btn_donateCC_LG.gif", :title => "PayPal - The safer, easier way to pay online!", :type => "image"}/
+        %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypal.com/en_PL/i/scr/pixel.gif", :width => "1"}/
+  .col-6
+    %b Autotext examples:
+    /.embed-responsive.embed-responsive-16by9
+    /  %iframe.embed-responsive-item{:allow => "autoplay; encrypted-media", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/-Yjx9eAiI2E?rel=0", :width => "560"}
+    %br
+    Google docs:
+    = image_tag "https://i.imgur.com/E00GzbD.png", style: 'height:auto;width:100%;'
+    %p
+    Word:
+    = image_tag "https://i.imgur.com/wiP6AJ6.png", style: 'height:auto;width:100%;'
+.row
+
+%footer.page-footer.font-small.stylish-color-dark.pt-4.mt-4
+.bg-dark.text-white
+  %hr.bg-light
+  / Call to action
+  %ul.list-unstyled.list-inline.text-center.py-2
+    %li.list-inline-item
+      %h5.mb-1 Ready to get started?
+    = link_to 'Get started for free', root_path, class: 'btn btn-lg btn-primary'
+
+  / Call to action
+  %hr/
+  / Footer Links
+  .container.text-center.text-md-left
+    / Grid row
+    .row
+      / Grid column
+      .col-md-4.mx-auto
+        / Content
+        %h5.font-weight-bold.text-uppercase.mt-3.mb-4
+          /Footer Content
+        %p
+          %small
+            © #{Time.now.year} Copyright - InteliLex-Ai Ltd. 
+            %p
+            All rights reserved -
+            %a{:href => "http://www.intelilex.herokuapp.com/"} intelilex.herokuapp.com
+            %p
+            13 Konstruktorska str. 02-651, Warsaw, Poland
+            %p
+            = mail_to 'hello@intelilex.co'
+            %p
+            #footer
+              .block
+                %p
+                  Copyright © #{Time.now.year}
+                  InteliLex.ai
+      / Grid column
+      %hr.clearfix.w-100.d-md-none/
+      / Grid column
+      .col-md-2.mx-auto
+        / Links
+        %h5.font-weight-bold.text-uppercase.mt-3.mb-4 Product
+        %ul.list-unstyled
+          = link_to 'Features', root_path
+          %p
+          = link_to 'How?', root_path
+          %p
+          = link_to 'Pricing', root_path
+      / Grid column
+      %hr.clearfix.w-100.d-md-none/
+      / Grid column
+      .col-md-2.mx-auto
+        / Links
+        %h5.font-weight-bold.text-uppercase.mt-3.mb-4 Legal
+        %ul.list-unstyled
+          = link_to 'Pricing policy', root_path
+          = link_to 'Customer agreement', root_path
+          = link_to 'Terms of service', root_path
+          = link_to 'Security', root_path
+      / Grid column
+      %hr.clearfix.w-100.d-md-none/
+      / Grid column
+      .col-md-2.mx-auto
+        / Links
+        %h5.font-weight-bold.text-uppercase.mt-3.mb-4 About us
+        %ul.list-unstyled
+          = link_to 'Contact us', root_path
+      / Grid column
+    / Grid row
+  / Footer Links
