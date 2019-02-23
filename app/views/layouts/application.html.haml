@@ -9,8 +9,12 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     .navbar.nav.bg-primary.text-center.text-white
-      %h1 InteliLex.ai  
+      %a.navbar-brand{:href => "/"} 
+        .text-white
+          %h1 InteliLex.ai  
       /autotext
+      = link_to 'Subscribe for our secret news and beta', new_lead_path, class: 'btn btn-warning'
+
     %br
     .container-fluid
       = yield

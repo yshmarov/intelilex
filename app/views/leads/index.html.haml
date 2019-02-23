@@ -1,0 +1,13 @@
+%h1 Listing subscribers
+
+%table
+  %thead
+    %tr
+      %th Email
+      %th Comment
+  %tbody
+    - @leads.each_with_index do |lead, index|
+      %tr
+        %td= index +1
+        %td= lead.email
+        %td= lead.comment

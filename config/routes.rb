@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :leads, except: [:show, :edit]
   root to: 'static_pages#welcome'
   get 'cancel', to: 'static_pages#cancel'
   get 'completed', to: 'static_pages#completed'
