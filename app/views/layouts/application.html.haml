@@ -12,7 +12,17 @@
     .navbar.nav.bg-primary.text-center.text-white
       %a.navbar-brand{:href => "/"} 
         .text-white
-          %h1 inteliLex.ai  
+          %h1 inteliLex
+      %script{:src => "https://platform.linkedin.com/in.js", :type => "text/javascript"}
+        :cdata
+          lang: en_US
+      %script{"data-counter" => "top", "data-id" => "19040852", :type => "IN/FollowCompany"}
+
+      %script{:src => "https://platform.linkedin.com/in.js", :type => "text/javascript"}
+        :cdata
+          lang: en_US
+      %script{"data-url" => "https://intelilex.herokuapp.com/", :type => "IN/Share"}
+
       /autotext
       = link_to 'Subscribe for our secret news and beta', new_lead_path, class: 'btn btn-warning'
 
