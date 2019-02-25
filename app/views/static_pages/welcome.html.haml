@@ -1,15 +1,23 @@
 .row
   .col-lg-6
     .container
-      %p
-      %p
+      %script{:src => "https://platform.linkedin.com/in.js", :type => "text/javascript"}
+        :cdata
+          lang: en_US
+      %script{"data-counter" => "top", "data-id" => "19040852", :type => "IN/FollowCompany"}
+
+      %script{:src => "https://platform.linkedin.com/in.js", :type => "text/javascript"}
+        :cdata
+          lang: en_US
+      %script{"data-url" => "https://intelilex.herokuapp.com/", :type => "IN/Share"}
+
       %p
         %b Autocomplete 2.0
       %p
         %b Word plugin to autocomplete text based on previous documents.
       /%p 1st year after launch - free for 1 user. regular price will be around 5eur/user/month
-      %li Spend less time on scrolling past documents.
-      %li Find relevant information 30% faster.
+      %li Spend less time on scrolling through documents.
+      %li Find relevant information faster.
       %li Make your knowledgebase easily reusable
       %hr/
       %form{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :target => "_top"}
@@ -19,35 +27,44 @@
         %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypal.com/en_PL/i/scr/pixel.gif", :width => "1"}/
       %p
       By donating, you will:
-      %li - Be first to try the alpha versions.
-      %li - Get updates on our daily work towards the launch.
-      %li - Have access to the product for free for 1 year after launch.
-      %li - No launch? Money back guarantee!
+      %li - Get updates & sneak pics on our progress ;)
+      %li - Have early bird access when we launch!
   .col-lg-6
-    .text-center
-      %h1 How it works:
     .embed-responsive.embed-responsive-16by9
       /%iframe.embed-responsive-item{:allow => "autoplay; encrypted-media", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube-nocookie.com/embed/yJP6Hd_SzyA?controls=0", :width => "560"}
       /%iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube-nocookie.com/embed/yJP6Hd_SzyA", :width => "560"}
       /%iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/vHRIuLycjAQ", :width => "560"}
       %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/SnZdRpjUs-M", :width => "560"}
 
-    .navbar.nav.bg-primary.text-white We are launching in 2019 Q2
+    .navbar.nav.bg-primary.text-white Launching soon!
     /%br
     /Google docs:
     /= image_tag "https://i.imgur.com/E00GzbD.png", style: 'height:auto;width:100%;'
     /%p
     /Word:
     %br
-
-.text-center
-  %h1 How it looks:
-= image_tag "https://i.imgur.com/92Z3cy7.png", style: 'height:auto;width:100%;'
-
+%hr
+.row
+  .col-lg-6
+    .text-center
+      %h1 Today
+      It can take some time to search through your documents and find the right text snippet that you want to use. Frustrating!
+    = image_tag "https://i.imgur.com/IDctFvl.png", style: 'height:auto;width:100%;'
+  .col-lg-6
+    .text-center
+      %h1 Tomorrow
+      Just start typing, and our plugin will automagically find the most relevant clauses from your document database. Much faster and all in one window! 
+    = image_tag "https://i.imgur.com/92Z3cy7.png", style: 'height:auto;width:100%;'
+%hr
 .text-center
   %h1 Our team:
 = image_tag "https://i.imgur.com/WmsEWRo.jpg", style: 'height:auto;width:100%;'
-
+%p
+.row
+  .col-lg-6
+    = image_tag "https://i.imgur.com/hpuD1HU.png", style: 'height:auto;width:100%;'
+    .text-center
+      Victory at the Legal Hackathon hosted by Wolters Kluwer Poland, 2019
 .row
 </div>
 %footer.page-footer.font-small.stylish-color-dark.pt-4.mt-4
