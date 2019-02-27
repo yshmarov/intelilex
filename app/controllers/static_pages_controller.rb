@@ -7,4 +7,7 @@ class StaticPagesController < ApplicationController
 
   def welcome
   end
+
+  def for_press
+  end
 end
