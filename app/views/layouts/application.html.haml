@@ -9,24 +9,15 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     #notice= notice
-    .navbar.nav.bg-primary.text-center.text-white
-      %a.navbar-brand{:href => "/"} 
-        .text-white
-          %h1 inteliLex
-      %script{:src => "https://platform.linkedin.com/in.js", :type => "text/javascript"}
-        :cdata
-          lang: en_US
-      %script{"data-counter" => "top", "data-id" => "19040852", :type => "IN/FollowCompany"}
-
-      %script{:src => "https://platform.linkedin.com/in.js", :type => "text/javascript"}
-        :cdata
-          lang: en_US
-      %script{"data-url" => "https://intelilex.herokuapp.com/", :type => "IN/Share"}
-
-      /autotext
-      = link_to '>> For Press <<', for_press_path, class: 'btn btn-light mr-sm-2'
-      = link_to 'Subscribe for our secret news and beta', new_lead_path, class: 'btn btn-warning mr-sm-2'
-
+    %nav.navbar.fixed-top.navbar-expand-lg.navbar-primary.bg-warning
+      %button.navbar-toggler{"aria-controls" => "navbarTogglerDemo01", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarTogglerDemo01", "data-toggle" => "collapse", :type => "button"}
+        %span.navbar-toggler-icon
+      #navbarTogglerDemo01.collapse.navbar-collapse
+        %a.navbar-brand{:href => "/"} 
+          .text-dark
+            %h1 inteliLex
+      = link_to 'For Press', for_press_path, class: 'btn btn-dark mr-sm-2'
+      = link_to 'Sign up', new_lead_path, class: 'btn btn-dark mr-sm-2'
     %br
     .container-fluid
       = yield

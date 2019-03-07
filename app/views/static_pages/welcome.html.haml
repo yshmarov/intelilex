@@ -1,57 +1,74 @@
 .row
   .col-lg-6
     .container
-      %p
-        %b Autocomplete 1.0: Type a few letters, pick a word.
-      %p
-        %b Autocomplete 2.0: Type a few words, pick a text snippet. This is inteliLex. The first version of inteliLex is a Word plugin (powered by machine learning) to find best match text snippets in other relevant documents as you type!
-      /We have created the technology that . 
-      %p
-      /%p 1st year after launch - free for 1 user. regular price will be around 5eur/user/month
+      %h2 What is it?
+      InteliLex helps lawyers find the content they already created any time in the past within seconds by directly integrating with Microsoft Word and by using Machine Learning algorithms. InteliLex suggests relevant parts of text while a document, such as a contract, is being written.
+      %h2 Why do you need it?
       %li Spend less time on scrolling through documents.
       %li Find relevant information faster.
       %li Make your knowledgebase easily reusable
-      %hr/
-      %form{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :target => "_top"}
-        %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}/
-        %input{:name => "hosted_button_id", :type => "hidden", :value => "US2K8TGRFR5CA"}/
-        %input{:alt => "Donate with PayPal button", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/PL/i/btn/btn_donateCC_LG.gif", :title => "PayPal - The safer, easier way to pay online!", :type => "image"}/
-        %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypal.com/en_PL/i/scr/pixel.gif", :width => "1"}/
-      %p
-      By donating, you will:
-      %li - Get updates & sneak pics on our progress ;)
-      %li - Have early bird access when we launch!
+      %h2 Early adopter? 
+      = link_to 'Subscribe & be first to know when we launch', new_lead_path, class: 'btn btn-lg btn-warning'
   .col-lg-6
     .embed-responsive.embed-responsive-16by9
       /%iframe.embed-responsive-item{:allow => "autoplay; encrypted-media", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube-nocookie.com/embed/yJP6Hd_SzyA?controls=0", :width => "560"}
       /%iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube-nocookie.com/embed/yJP6Hd_SzyA", :width => "560"}
       /%iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/vHRIuLycjAQ", :width => "560"}
       %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/SnZdRpjUs-M", :width => "560"}
-
-    .navbar.nav.bg-primary.text-white Launching soon!
-    /%br
-    /Google docs:
-    /= image_tag "https://i.imgur.com/E00GzbD.png", style: 'height:auto;width:100%;'
-    /%p
-    /Word:
-    %br
 %hr
 .row
   .col-lg-6
     .text-center
-      %h1 Today
-      It can take some time to search through your documents and find the right text snippet that you want to use. Frustrating!
+      %h2 Your work today
+      Frustrating. It can take some time to search through your documents and find the right text snippet that you want to use.
     = image_tag "https://i.imgur.com/IDctFvl.png", style: 'height:auto;width:100%;'
   .col-lg-6
     .text-center
-      %h1 Tomorrow
+      %h2 Your work with intiliLex
       Just start typing, and our plugin will automagically find the most relevant clauses from your document database. Much faster and all in one window! 
-    /OLD PHOTO
-    /= image_tag "https://i.imgur.com/92Z3cy7.png", style: 'height:auto;width:100%;'
     = image_tag "https://i.imgur.com/DUJ2ASa.png", style: 'height:auto;width:100%;'
+
 %hr
 .text-center
-  %h1 Our team:
+  %form{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :target => "_top"}
+    %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}/
+    %input{:name => "hosted_button_id", :type => "hidden", :value => "US2K8TGRFR5CA"}/
+    %input{:alt => "Donate with PayPal button", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/PL/i/btn/btn_donateCC_LG.gif", :title => "PayPal - The safer, easier way to pay online!", :type => "image"}/
+    %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypal.com/en_PL/i/scr/pixel.gif", :width => "1"}/
+  %p
+  %h4 what for?
+  %li Have early bird access when we launch!
+  %li Before that, get exclusive updates on our progress ;)
+  /%li 1st year after launch - free for 1 user. regular price will be around 5eur/user/month
+
+%hr
+.text-center
+  %script{:src => "https://platform.linkedin.com/in.js", :type => "text/javascript"}
+    :cdata
+      lang: en_US
+  %script{"data-counter" => "top", "data-id" => "19040852", :type => "IN/FollowCompany"}
+  
+  %script{:src => "https://platform.linkedin.com/in.js", :type => "text/javascript"}
+    :cdata
+      lang: en_US
+  %script{"data-url" => "https://intelilex.herokuapp.com/", :type => "IN/Share"}
+
+%hr
+.row
+  .col-lg-6
+    .text-center
+      %h2 Autocomplete 1.0
+      Type a few letters, pick a word.
+    /= image_tag "https://i.imgur.com/IDctFvl.png", style: 'height:auto;width:100%;'
+  .col-lg-6
+    .text-center
+      %h2 Autocomplete 2.0 (intiliLex)
+      Autocomplete 2.0: Type a few words, pick a text snippet. This is inteliLex. The first version of inteliLex is a Word plugin (powered by machine learning) to find best match text snippets in other relevant documents as you type!
+    /= image_tag "https://i.imgur.com/DUJ2ASa.png", style: 'height:auto;width:100%;'
+
+%hr
+.text-center
+  %h2 Our team:
 = image_tag "https://i.imgur.com/WmsEWRo.jpg", style: 'height:auto;width:100%;'
 %p
 .text-center
