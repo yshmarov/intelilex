@@ -8,6 +8,10 @@ class StaticPagesController < ApplicationController
   def welcome
   end
 
+  def faq
+  end
+
   def for_press
+    @links = Link.all
   end
 end

@@ -1,0 +1,58 @@
+%footer.page-footer.font-small.stylish-color-dark.pt-4.mt-4
+.bg-dark.text-white
+  %ul.list-unstyled.list-inline.text-center.py-2
+    %li.list-inline-item
+      %h5.mb-1 Ready to get started?
+    = link_to 'Subscribe & be first to know when we launch!', new_lead_path, class: 'btn btn-lg btn-warning'
+  %hr/
+  .container.text-center.text-md-left
+    .row
+      .col-md-4.mx-auto
+        %h5.font-weight-bold.text-uppercase.mt-3.mb-4 Product
+        %ul.list-unstyled
+          = link_to 'FAQ', faq_path
+          %p
+          = link_to 'For Press', for_press_path
+      .col-md-4.mx-auto
+        %h5.font-weight-bold.text-uppercase.mt-3.mb-4 Social
+        %ul.list-unstyled
+          %script{:src => "https://platform.linkedin.com/in.js", :type => "text/javascript"}
+            :cdata
+              lang: en_US
+          %script{"data-counter" => "top", "data-id" => "19040852", :type => "IN/FollowCompany"}
+          
+          %script{:src => "https://platform.linkedin.com/in.js", :type => "text/javascript"}
+            :cdata
+              lang: en_US
+          %script{"data-url" => "https://intelilex.herokuapp.com/", :type => "IN/Share"}
+      /.col-md-4.mx-auto
+      /  %h5.font-weight-bold.text-uppercase.mt-3.mb-4 Legal
+      /  %ul.list-unstyled
+      /    = link_to 'Pricing policy', root_path
+      /    %p
+      /    = link_to 'Customer agreement', root_path
+      /    %p
+      /    = link_to 'Terms of service', root_path
+      /    %p
+      /    = link_to 'Security', root_path
+      .col-md-4.mx-auto
+        %h5.font-weight-bold.text-uppercase.mt-3.mb-4 About us
+        %ul.list-unstyled
+          © #{Time.now.year} inteliLex
+          %p
+          All rights reserved -
+          %a{:href => "http://www.intelilex.herokuapp.com/"} intelilex.herokuapp.com
+          %p
+          /13 Konstruktorska str. 02-651, Warsaw, Poland
+          %p
+          = mail_to 'yshmarov@gmail.com'
+          %p
+          #footer
+            .block
+              %p
+                Copyright © #{Time.now.year}
+                inteliLex
+          %p
+          %a{:href => "tel:+48-537-628-023"}
+            = succeed "+48-537-628-023" do
+              %span.fa.fa-phone{:style => "padding-left:10px; padding-right:10px;"}

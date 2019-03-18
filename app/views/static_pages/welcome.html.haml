@@ -1,24 +1,18 @@
 .row
   .col-lg-6
-    .container
-      %h5 InteliLex helps lawyers find the content they already created any time in the past within seconds.
-      %h5 It integrates directly with Microsoft Word and your document knowledgebase.
-      %h5 While a document, such as a contract, is being written, InteliLex suggests relevant parts of text, by using Machine Learning algorithms.  
-      %h2 Why do you need it?
-      %li Spend less time on scrolling through documents.
-      %li Find relevant information faster.
-      %li Make your knowledgebase easily reusable
+    %h2.display-4 InteliLex suggests relevant pieces of text while you work on documents.
+    %h5 iL integrates directly with Microsoft Word and your document knowledgebase.
   .col-lg-6
     .embed-responsive.embed-responsive-16by9
       /%iframe.embed-responsive-item{:allow => "autoplay; encrypted-media", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube-nocookie.com/embed/yJP6Hd_SzyA?controls=0", :width => "560"}
       /%iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube-nocookie.com/embed/yJP6Hd_SzyA", :width => "560"}
       /%iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/vHRIuLycjAQ", :width => "560"}
       %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/SnZdRpjUs-M", :width => "560"}
+      /https://www.youtube.com/watch?v=R_l8itiDQEA&feature=youtu.be
 %hr
 .text-center
-  %h2 Early adopter? 
-  = link_to 'Subscribe & be first to know when we launch', new_lead_path, class: 'btn btn-lg btn-warning'
-
+  %h2 Early adopter? Be first to know when we launch
+  = link_to 'Subscribe', new_lead_path, class: 'btn btn-lg btn-warning'
 %hr
 .row
   .col-lg-6
@@ -30,7 +24,41 @@
     .text-center
       %h2 Your work with intiliLex
       Just start typing, and our plugin will automagically find the most relevant clauses from your document database. Much faster and all in one window! 
-    = image_tag "https://i.imgur.com/DUJ2ASa.png", style: 'height:auto;width:100%;'
+    /polish
+    /= image_tag "https://i.imgur.com/DUJ2ASa.png", style: 'height:auto;width:100%;'
+    /english
+    = image_tag "https://i.imgur.com/UFpcwzm.png", style: 'height:auto;width:100%;'
+
+
+%hr
+%h2.text-center What for?
+.card-group
+  .card
+    .card-body.text-center
+      %i.fa.fa-file-word.fa-3x{:style => "font-size:50px;color:orange;"}
+      %h5.card-title Find
+      %p.card-text
+        %small.text-muted Find content that you've already created in the past within seconds.
+  .card
+    .card-body.text-center
+      %i.fa.fa-clock.fa-3x{:style => "font-size:50px;color:orange;"}
+      %h5.card-title Save
+      %p.card-text
+        %small.text-muted Spend less time on scrolling through documents.
+  .card
+    .card-body.text-center
+      %i.fa.fa-book-open.fa-3x{:style => "font-size:50px;color:orange;"}
+      %h5.card-title Reuse
+      %p.card-text
+        %small.text-muted Make your knowledgebase easily reusable.
+  .card
+    .card-body.text-center
+      %i.fa.fa-search.fa-3x{:style => "font-size:50px;color:orange;"}
+      %h5.card-title Compare
+      %p.card-text
+        %small.text-muted New way to compare similar clauses.
+/%h5 InteliLex helps lawyers find the content they already created any time in the past within seconds.
+/%h5 While a document, such as a contract, is being written, InteliLex suggests relevant parts of text, by using Machine Learning algorithms.  
 
 %hr
 .text-center
@@ -40,113 +68,31 @@
     %input{:alt => "Donate with PayPal button", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/PL/i/btn/btn_donateCC_LG.gif", :title => "PayPal - The safer, easier way to pay online!", :type => "image"}/
     %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypal.com/en_PL/i/scr/pixel.gif", :width => "1"}/
   %p
-  %h4 what for?
+  %h4 Why donate?
   %li Have early bird access when we launch!
   %li Before that, get exclusive updates on our progress ;)
   /%li 1st year after launch - free for 1 user. regular price will be around 5eur/user/month
 
-%hr
-.text-center
-  %script{:src => "https://platform.linkedin.com/in.js", :type => "text/javascript"}
-    :cdata
-      lang: en_US
-  %script{"data-counter" => "top", "data-id" => "19040852", :type => "IN/FollowCompany"}
-  
-  %script{:src => "https://platform.linkedin.com/in.js", :type => "text/javascript"}
-    :cdata
-      lang: en_US
-  %script{"data-url" => "https://intelilex.herokuapp.com/", :type => "IN/Share"}
-
-%hr
-.row
-  .col-lg-6
-    .text-center
-      %h2 Autocomplete 1.0
-      Type a few letters, pick a word.
-    /= image_tag "https://i.imgur.com/IDctFvl.png", style: 'height:auto;width:100%;'
-  .col-lg-6
-    .text-center
-      %h2 Autocomplete 2.0 (intiliLex)
-      Autocomplete 2.0: Type a few words, pick a text snippet. This is inteliLex. The first version of inteliLex is a Word plugin (powered by machine learning) to find best match text snippets in other relevant documents as you type!
-    /= image_tag "https://i.imgur.com/DUJ2ASa.png", style: 'height:auto;width:100%;'
+/%hr
+/.row
+/  .col-lg-6
+/    .text-center
+/      %h2 Autocomplete 1.0
+/      Type a few letters - pick a word. Limited "smart" answers.
+/    /= image_tag "https://i.imgur.com/IDctFvl.png", style: 'height:auto;width:100%;'
+/  .col-lg-6
+/    .text-center
+/      %h2 Autocomplete 2.0 (intiliLex)
+/      Autocomplete 2.0: Type a few words, pick a text snippet. This is inteliLex. The first version of inteliLex is a Word plugin (powered by machine learning) to find best match text snippets in other relevant documents as you type!
+/    = image_tag "https://i.imgur.com/DUJ2ASa.png", style: 'height:auto;width:100%;'
+/    /= image_tag "https://i.imgur.com/DUJ2ASa.png", style: 'height:auto;width:100%;'
 
 %hr
 .text-center
-  %h2 Our team:
-= image_tag "https://i.imgur.com/WmsEWRo.jpg", style: 'height:auto;width:100%;'
+  %h2 Our team
+= image_tag "https://i.imgur.com/g8DC00m.jpg", style: 'height:auto;width:100%;'
 %p
 .text-center
   %h2 Victory at the Legal Hackathon hosted by Wolters Kluwer Poland, 2019
 = image_tag "https://i.imgur.com/hpuD1HU.png", style: 'height:auto;width:100%;'
 .row
-</div>
-%footer.page-footer.font-small.stylish-color-dark.pt-4.mt-4
-.bg-dark.text-white
-  %hr.bg-light
-  / Call to action
-  %ul.list-unstyled.list-inline.text-center.py-2
-    %li.list-inline-item
-      %h5.mb-1 Ready to get started?
-    = link_to 'Subscribe & be first to know when we launch!', new_lead_path, class: 'btn btn-lg btn-primary'
-
-  / Call to action
-  %hr/
-  / Footer Links
-  .container.text-center.text-md-left
-    / Grid row
-    .row
-      / Grid column
-      .col-md-4.mx-auto
-        / Content
-        %h5.font-weight-bold.text-uppercase.mt-3.mb-4
-          /Footer Content
-        %p
-          %small
-            © #{Time.now.year} inteliLex
-            %p
-            All rights reserved -
-            %a{:href => "http://www.intelilex.herokuapp.com/"} intelilex.herokuapp.com
-            %p
-            /13 Konstruktorska str. 02-651, Warsaw, Poland
-            %p
-            = mail_to 'yshmarov@gmail.com'
-            %p
-            #footer
-              .block
-                %p
-                  Copyright © #{Time.now.year}
-                  inteliLex
-      / Grid column
-      %hr.clearfix.w-100.d-md-none/
-      / Grid column
-      .col-md-2.mx-auto
-        / Links
-        %h5.font-weight-bold.text-uppercase.mt-3.mb-4 Product
-        %ul.list-unstyled
-          = link_to 'Features', root_path
-          %p
-          = link_to 'How?', root_path
-          %p
-          = link_to 'Pricing', root_path
-      / Grid column
-      %hr.clearfix.w-100.d-md-none/
-      / Grid column
-      .col-md-2.mx-auto
-        / Links
-        %h5.font-weight-bold.text-uppercase.mt-3.mb-4 Legal
-        %ul.list-unstyled
-          = link_to 'Pricing policy', root_path
-          = link_to 'Customer agreement', root_path
-          = link_to 'Terms of service', root_path
-          = link_to 'Security', root_path
-      / Grid column
-      %hr.clearfix.w-100.d-md-none/
-      / Grid column
-      .col-md-2.mx-auto
-        / Links
-        %h5.font-weight-bold.text-uppercase.mt-3.mb-4 About us
-        %ul.list-unstyled
-          = link_to 'Contact us', root_path
-      / Grid column
-    / Grid row
-  / Footer Links

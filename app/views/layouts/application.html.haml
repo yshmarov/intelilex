@@ -3,6 +3,7 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title inteliLex
+    = favicon_link_tag 'iL short logo.png'
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
@@ -14,10 +15,15 @@
         %span.navbar-toggler-icon
       #navbarTogglerDemo01.collapse.navbar-collapse
         %a.navbar-brand{:href => "/"} 
-          .text-dark
-            %h1 inteliLex
+          .form-inline
+            /= image_tag "iL short logo.png", size: "25x25", class: "mx-auto d-inline align-top", :alt => "Myclass logo"
+            .text-dark
+              %h1 inteliLex
+      = link_to 'FAQ', faq_path, class: 'btn btn-dark mr-sm-2'
       = link_to 'For Press', for_press_path, class: 'btn btn-dark mr-sm-2'
       = link_to 'Sign up', new_lead_path, class: 'btn btn-dark mr-sm-2'
     %br
     .container-fluid
       = yield
+      </div>
+      = render 'layouts/footer'

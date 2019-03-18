@@ -1,5 +1,4 @@
-.text-center
-  %h4 For Press
+%h3.text-center For Press
 %hr
 %b Thank you for visiting :) You can learn more here:
 /If you want to find out more, contact us at yshmarov@gmail.com [we are yet to create a normal website url and corporate email ;)]
@@ -9,6 +8,19 @@
 = link_to 'Our Linkedin page', "https://www.linkedin.com/company/19040852", :target => '_blank'
 .row
 = link_to 'Our Insta page', "https://www.instagram.com/intelilex.co", :target => '_blank'
+
+%hr
+%b Brand:
+.row
+= link_to 'Short Logo', "https://i.imgur.com/7i54lZn.png", :target => '_blank'
+.row
+= link_to 'Short Logo - white', "https://i.imgur.com/4SLdtFy.png", :target => '_blank'
+.row
+= link_to 'Word Logo', "https://i.imgur.com/WleKSQY.png", :target => '_blank'
+.row
+= link_to 'Slogan', "https://i.imgur.com/knON6uN.png", :target => '_blank'
+.row
+= link_to 'Word Logo + Slogan', "https://i.imgur.com/bJW6DzF.png", :target => '_blank'
 
 %hr
 %b High quality photos:
@@ -33,29 +45,29 @@
 .row
 = link_to 'artificiallawyer.com - The Full List – GLH2019 Winners From Around The World', "https://www.artificiallawyer.com/2019/03/05/the-full-list-glh2019-winners-from-around-the-world", :target => '_blank'
 .row
-= link_to 'YaroTheSlav - Global Legal Hackathon Warsaw 22-24 Feb'19', "https://yaro-the-slav.blogspot.com/2019/03/legal-hackathon-warsaw-22-24-feb19.html", :target => '_blank'
+= link_to "YaroTheSlav - Global Legal Hackathon Warsaw 22-24 Feb'19", "https://yaro-the-slav.blogspot.com/2019/03/legal-hackathon-warsaw-22-24-feb19.html", :target => '_blank'
 
 
-%h1 Listing links
-
-%table
-  %thead
-    %tr
-      %th Url
-      %th Description
-      %th
-      %th
-      %th
-
-  %tbody
-    - @links.each do |link|
-      %tr
-        %td= link.url
-        %td= link.description
-        %td= link_to 'Show', link
-        %td= link_to 'Edit', edit_link_path(link)
-        %td= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' }
-
-%br
-
-= link_to 'New Link', new_link_path
+/%h1 Listing links
+/
+/%table
+/  %thead
+/    %tr
+/      %th Url
+/      %th Description
+/      %th
+/      %th
+/      %th
+/
+/  %tbody
+/    - @links.each do |link|
+/      %tr
+/        %td= link.url
+/        %td= link.description
+/        %td= link_to 'Show', link
+/        %td= link_to 'Edit', edit_link_path(link)
+/        %td= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' }
+/
+/%br
+/
+/= link_to 'New Link', new_link_path
