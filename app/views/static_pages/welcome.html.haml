@@ -1,77 +1,116 @@
-.row
-  .col-lg-6
-    %h2.display-4 InteliLex suggests relevant pieces of text while you work on documents.
-    %h5 iL integrates directly with Microsoft Word and your document knowledgebase.
-  .col-lg-6
-    .embed-responsive.embed-responsive-16by9
-      /%iframe.embed-responsive-item{:allow => "autoplay; encrypted-media", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube-nocookie.com/embed/yJP6Hd_SzyA?controls=0", :width => "560"}
-      /%iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube-nocookie.com/embed/yJP6Hd_SzyA", :width => "560"}
-      /%iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/vHRIuLycjAQ", :width => "560"}
-      %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/SnZdRpjUs-M", :width => "560"}
-      /https://www.youtube.com/watch?v=R_l8itiDQEA&feature=youtu.be
-%hr
-.text-center
-  %h2 Early adopter? Be first to know when we launch
-  = link_to 'Subscribe', new_lead_path, class: 'btn btn-lg btn-warning'
-%hr
-.row
-  .col-lg-6
-    .text-center
-      %h2 Your work today
-      Frustrating. It can take some time to search through your documents and find the right text snippet that you want to use.
-    = image_tag "https://i.imgur.com/IDctFvl.png", style: 'height:auto;width:100%;'
-  .col-lg-6
-    .text-center
-      %h2 Your work with intiliLex
-      Just start typing, and our plugin will automagically find the most relevant clauses from your document database. Much faster and all in one window! 
-    /polish
-    /= image_tag "https://i.imgur.com/DUJ2ASa.png", style: 'height:auto;width:100%;'
-    /english
-    = image_tag "https://i.imgur.com/UFpcwzm.png", style: 'height:auto;width:100%;'
+</div>
+.container
+  .row
+    .col-lg-6
+      %h2.display-4 InteliLex suggests relevant pieces of text while you work on documents.
+    .col-lg-6
+      .embed-responsive.embed-responsive-16by9
+        /%iframe.embed-responsive-item{:allow => "autoplay; encrypted-media", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube-nocookie.com/embed/yJP6Hd_SzyA?controls=0", :width => "560"}
+        /%iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube-nocookie.com/embed/yJP6Hd_SzyA", :width => "560"}
+        /%iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/vHRIuLycjAQ", :width => "560"}
+        %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/SnZdRpjUs-M", :width => "560"}
+        /https://www.youtube.com/watch?v=R_l8itiDQEA&feature=youtu.be
+      %h6.text-center
+        %small iL integrates directly with Microsoft Word and your document knowledgebase.
+%br
+
+.jumbotron.bg-light
+  .text-center
+    %h2 Early adopter? Be first to know when we launch
+    %br= link_to 'Subscribe', new_lead_path, class: 'btn btn-lg btn-warning'
+
+.container-fluid
+  .row
+    .col-lg-6
+      .text-center
+        %h2 Your work today
+        Frustrating. It can take some time to search through your documents and find the right text snippet that you want to use.
+      = image_tag "https://i.imgur.com/IDctFvl.png", style: 'height:auto;width:100%;'
+    .col-lg-6
+      .text-center
+        %h2 
+          Your work with intiliLex
+        Just start typing, and our plugin will automagically find the most relevant clauses from your document database. Much faster and all in one window! 
+      /polish
+      /= image_tag "https://i.imgur.com/DUJ2ASa.png", style: 'height:auto;width:100%;'
+      /english
+      = image_tag "https://i.imgur.com/UFpcwzm.png", style: 'height:auto;width:100%;'
 
 
-%hr
-%h2.text-center What for?
+:css
+  .parallax { 
+    /* The image used */
+    background-image: url("https://i.imgur.com/kbOXzsH.jpg");
+  
+    /* Set a specific height */
+    height: 300px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+/ Container element
+.parallax
+
+%h2.display-4.text-center What for?
 .card-group
   .card
-    .card-body.text-center
-      %i.fa.fa-file-word.fa-3x{:style => "font-size:50px;color:orange;"}
-      %h5.card-title Find
+    .card-body.text-center.bg-light
+      %i.fa.fa-file-word.fa-3x{:style => "font-size:80px;color:orange;"}
+      %h4.card-title Find
       %p.card-text
-        %small.text-muted Find content that you've already created in the past within seconds.
+        %small Find content that you've already created in the past within seconds.
   .card
-    .card-body.text-center
-      %i.fa.fa-clock.fa-3x{:style => "font-size:50px;color:orange;"}
-      %h5.card-title Save
+    .card-body.text-center.bg-light
+      %i.fa.fa-clock.fa-3x{:style => "font-size:80px;color:orange;"}
+      %h4.card-title Save
       %p.card-text
-        %small.text-muted Spend less time on scrolling through documents.
+        %small Spend less time on scrolling through documents.
   .card
-    .card-body.text-center
-      %i.fa.fa-book-open.fa-3x{:style => "font-size:50px;color:orange;"}
-      %h5.card-title Reuse
+    .card-body.text-center.bg-light
+      %i.fa.fa-book-open.fa-3x{:style => "font-size:80px;color:orange;"}
+      %h4.card-title Reuse
       %p.card-text
-        %small.text-muted Make your knowledgebase easily reusable.
+        %small Make your knowledgebase easily reusable.
   .card
-    .card-body.text-center
-      %i.fa.fa-search.fa-3x{:style => "font-size:50px;color:orange;"}
-      %h5.card-title Compare
+    .card-body.text-center.bg-light
+      %i.fa.fa-search.fa-3x{:style => "font-size:80px;color:orange;"}
+      %h4.card-title Compare
       %p.card-text
-        %small.text-muted New way to compare similar clauses.
+        %small New way to compare similar clauses.
 /%h5 InteliLex helps lawyers find the content they already created any time in the past within seconds.
 /%h5 While a document, such as a contract, is being written, InteliLex suggests relevant parts of text, by using Machine Learning algorithms.  
 
+%br
+.container.text-center
+  .row
+    .col-md-4
+    .col-md-4.card.card-body
+      %form{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :target => "_top"}
+        %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}/
+        %input{:name => "hosted_button_id", :type => "hidden", :value => "US2K8TGRFR5CA"}/
+        %input{:alt => "Donate with PayPal button", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/PL/i/btn/btn_donateCC_LG.gif", :title => "PayPal - The safer, easier way to pay online!", :type => "image"}/
+        %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypal.com/en_PL/i/scr/pixel.gif", :width => "1"}/
+      %p
+      %h4 Why donate?
+      %li Have early bird access when we launch!
+      %li Before that, get exclusive updates on our progress ;)
+      /%li 1st year after launch - free for 1 user. regular price will be around 5eur/user/month
+
 %hr
-.text-center
-  %form{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :target => "_top"}
-    %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}/
-    %input{:name => "hosted_button_id", :type => "hidden", :value => "US2K8TGRFR5CA"}/
-    %input{:alt => "Donate with PayPal button", :border => "0", :name => "submit", :src => "https://www.paypalobjects.com/en_US/PL/i/btn/btn_donateCC_LG.gif", :title => "PayPal - The safer, easier way to pay online!", :type => "image"}/
-    %img{:alt => "", :border => "0", :height => "1", :src => "https://www.paypal.com/en_PL/i/scr/pixel.gif", :width => "1"}/
-  %p
-  %h4 Why donate?
-  %li Have early bird access when we launch!
-  %li Before that, get exclusive updates on our progress ;)
-  /%li 1st year after launch - free for 1 user. regular price will be around 5eur/user/month
+.container.text-center
+  %h2.display-4 Featured on
+  %br
+  .row
+    .col
+      = image_tag "https://i.imgur.com/ptzzX7z.png", style: 'height:auto;width:35%;'
+    .col
+      = image_tag "https://i.imgur.com/XsF0duJ.jpg", style: 'height:auto;width:55%;'
+    .col
+      = image_tag "https://i.imgur.com/GmukeE0.png", style: 'height:auto;width:35%;'
+
 
 /%hr
 /.row
@@ -89,7 +128,7 @@
 
 %hr
 .text-center
-  %h2 Our team
+  %h2 Big team. Big motivation. Big plans!
 = image_tag "https://i.imgur.com/g8DC00m.jpg", style: 'height:auto;width:100%;'
 %p
 .text-center
