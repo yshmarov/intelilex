@@ -39,19 +39,12 @@
         %h5.font-weight-bold.text-uppercase.mt-3.mb-4 About us
         %ul.list-unstyled
           © #{Time.now.year} inteliLex
-          %p
           All rights reserved -
-          %a{:href => "http://www.intelilex.herokuapp.com/"} intelilex.herokuapp.com
+          /%a{:href => "http://www.intelilex.herokuapp.com/"} intelilex.herokuapp.com
           %p
           /13 Konstruktorska str. 02-651, Warsaw, Poland
           %p
           = mail_to 'yshmarov@gmail.com'
-          %p
-          #footer
-            .block
-              %p
-                Copyright © #{Time.now.year}
-                inteliLex
           %p
           %a{:href => "tel:+48-537-628-023"}
             = succeed "+48-537-628-023" do
