@@ -53,31 +53,32 @@
 .parallax
 
 %h2.display-4.text-center What for?
-.card-group
-  .card
-    .card-body.text-center.bg-light
-      %i.fa.fa-file-word.fa-3x{:style => "font-size:80px;color:orange;"}
-      %h4.card-title Find
-      %p.card-text
-        %small Find content that you've already created in the past within seconds.
-  .card
-    .card-body.text-center.bg-light
-      %i.fa.fa-clock.fa-3x{:style => "font-size:80px;color:orange;"}
-      %h4.card-title Save
-      %p.card-text
-        %small Spend less time on scrolling through documents.
-  .card
-    .card-body.text-center.bg-light
-      %i.fa.fa-book-open.fa-3x{:style => "font-size:80px;color:orange;"}
-      %h4.card-title Reuse
-      %p.card-text
-        %small Make your knowledgebase easily reusable.
-  .card
-    .card-body.text-center.bg-light
-      %i.fa.fa-search.fa-3x{:style => "font-size:80px;color:orange;"}
-      %h4.card-title Compare
-      %p.card-text
-        %small New way to compare similar clauses.
+.container
+  .card-group
+    .card
+      .card-body.text-center.bg-light
+        %i.fa.fa-file-word.fa-3x{:style => "font-size:80px;color:orange;"}
+        %h4.card-title Find
+        %p.card-text
+          %small Find content that you've already created in the past within seconds.
+    .card
+      .card-body.text-center.bg-light
+        %i.fa.fa-clock.fa-3x{:style => "font-size:80px;color:orange;"}
+        %h4.card-title Save
+        %p.card-text
+          %small Spend less time on scrolling through documents.
+    .card
+      .card-body.text-center.bg-light
+        %i.fa.fa-book-open.fa-3x{:style => "font-size:80px;color:orange;"}
+        %h4.card-title Reuse
+        %p.card-text
+          %small Make your knowledgebase easily reusable.
+    .card
+      .card-body.text-center.bg-light
+        %i.fa.fa-search.fa-3x{:style => "font-size:80px;color:orange;"}
+        %h4.card-title Compare
+        %p.card-text
+          %small New way to compare similar clauses.
 /%h5 InteliLex helps lawyers find the content they already created any time in the past within seconds.
 /%h5 While a document, such as a contract, is being written, InteliLex suggests relevant parts of text, by using Machine Learning algorithms.  
 
@@ -98,16 +99,17 @@
       /%li 1st year after launch - free for 1 user. regular price will be around 5eur/user/month
 
 %hr
-.container.text-center
-  %h2.display-4 Featured on
-  %br
-  .row
-    .col
-      = image_tag "https://i.imgur.com/ptzzX7z.png", style: 'height:auto;width:35%;'
-    .col
-      = image_tag "https://i.imgur.com/XsF0duJ.jpg", style: 'height:auto;width:55%;'
-    .col
-      = image_tag "https://i.imgur.com/GmukeE0.png", style: 'height:auto;width:35%;'
+.container-fluid
+  .text-center
+    %h2.display-4 Featured on
+    %br
+    .row
+      .col
+        = image_tag "https://i.imgur.com/ptzzX7z.png", style: 'height:auto;width:35%;'
+      .col
+        = image_tag "https://i.imgur.com/XsF0duJ.jpg", style: 'height:auto;width:55%;'
+      .col
+        = image_tag "https://i.imgur.com/GmukeE0.png", style: 'height:auto;width:35%;'
 
 
 /%hr
@@ -133,3 +135,17 @@
   %h2 Victory at the Legal Hackathon hosted by Wolters Kluwer Poland, 2019
 = image_tag "https://i.imgur.com/hpuD1HU.png", style: 'height:auto;width:100%;'
 .row
+
+/%section#about.about-sec.parallax-section
+/  .container
+/    .row
+/      .col-md-3
+/        %h2
+/          About our project
+/      .col-md-4
+/        %p To enjoy good health, to bring true happiness to one's family, to bring peace to all, one must first discipline and control one's own mind. If a man can control his mind he can find the way to Enlightenment, and all wisdom and virtue will naturally come to him.
+/        %p Saving our planet, lifting people out of poverty, advancing economic growth... these are one and the same fight. We must connect the dots between climate change, water scarcity, energy shortages, global health, food security and women's empowerment. Solutions to one problem must be solutions for all.
+/      .col-md-4
+/        %p Our greatest happiness does not depend on the condition of life in which chance has placed us, but is always the result of a good conscience, good health, occupation, and freedom in all just pursuits.
+/        %p Being in control of your life and having realistic expectations about your day-to-day challenges are the keys to stress management, which is perhaps the most important ingredient to living a happy, healthy and rewarding life.
+/        %br= link_to 'Subscribe', new_lead_path, class: 'btn btn-lg btn-warning'
