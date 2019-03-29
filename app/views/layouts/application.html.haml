@@ -11,18 +11,7 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     #notice= notice
-    %nav.navbar.fixed-top.navbar-expand-lg.navbar-light.bg-light
-      %a.navbar-brand{:href => "/"} 
-        /= image_tag "iL short logo.png", size: "25x25", class: "mx-auto d-inline align-top", :alt => "logo"
-        = image_tag "https://i.imgur.com/WleKSQY.png", size: "130x25", class: "mx-auto d-inline align-top", :alt => "logo"
-        /%b inteliLex
-      %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
-        %span.navbar-toggler-icon
-      #navbarSupportedContent.collapse.navbar-collapse
-        %ul.navbar-nav.ml-md-auto.d-md-flex
-          = link_to 'FAQ', faq_path, class: 'btn btn-warning mr-sm-2'
-          = link_to 'For Press', for_press_path, class: 'btn btn-warning mr-sm-2'
-          = link_to 'Sign up', new_lead_path, class: 'btn btn-warning mr-sm-2'
+    = render 'layouts/header'
     %br
     .container-fluid
       = yield

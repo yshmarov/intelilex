@@ -8,10 +8,11 @@
         /%iframe.embed-responsive-item{:allow => "autoplay; encrypted-media", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube-nocookie.com/embed/yJP6Hd_SzyA?controls=0", :width => "560"}
         /%iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube-nocookie.com/embed/yJP6Hd_SzyA", :width => "560"}
         /%iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/vHRIuLycjAQ", :width => "560"}
-        %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/SnZdRpjUs-M", :width => "560"}
+        %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/moCZ-1iGBcs", :width => "560"}
+
         /https://www.youtube.com/watch?v=R_l8itiDQEA&feature=youtu.be
-      %h6.text-center
-        %small iL integrates directly with Microsoft Word and your document knowledgebase.
+      /%h6.text-center
+      /  %small iL video
 %br
 
 .jumbotron.bg-light
@@ -31,12 +32,7 @@
         %h2 
           Your work with intiliLex
         Just start typing, and our plugin will automagically find the most relevant clauses from your document database. Much faster and all in one window! 
-      /polish
-      /= image_tag "https://i.imgur.com/DUJ2ASa.png", style: 'height:auto;width:100%;'
-      /english
-      = image_tag "https://i.imgur.com/UFpcwzm.png", style: 'height:auto;width:100%;'
-
-
+      %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/SnZdRpjUs-M", :width => "560"}
 :css
   .parallax { 
     /* The image used */
@@ -83,10 +79,17 @@
 /%h5 While a document, such as a contract, is being written, InteliLex suggests relevant parts of text, by using Machine Learning algorithms.  
 
 %br
+
 .container.text-center
   .row
-    .col-md-4
-    .col-md-4.card.card-body
+    .col-md-6
+      /polish photo of how it works
+      /= image_tag "https://i.imgur.com/DUJ2ASa.png", style: 'height:auto;width:100%;'
+      /english photo of how it works
+      = image_tag "https://i.imgur.com/UFpcwzm.png", style: 'height:auto;width:100%;'
+      %h6.text-center
+        %small iL integrates directly with Microsoft Word and your document knowledgebase.
+    .col-md-6.card.card-body
       %form{:action => "https://www.paypal.com/cgi-bin/webscr", :method => "post", :target => "_top"}
         %input{:name => "cmd", :type => "hidden", :value => "_s-xclick"}/
         %input{:name => "hosted_button_id", :type => "hidden", :value => "US2K8TGRFR5CA"}/

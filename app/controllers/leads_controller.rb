@@ -4,7 +4,8 @@ class LeadsController < ApplicationController
   # GET /leads
   # GET /leads.json
   def index
-    @leads = Lead.all
+    #@leads = Lead.all
+    redirect_to root_path
   end
 
   # GET /leads/new
