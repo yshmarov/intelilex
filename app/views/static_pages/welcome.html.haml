@@ -17,7 +17,7 @@
 
 .jumbotron.bg-light
   .text-center
-    %h2 Early adopter? Be first to know when we launch
+    %h2 Early adopter? Be first to know when we launch!
     %br= link_to 'Subscribe', new_lead_path, class: 'btn btn-lg btn-warning'
 
 .container-fluid
@@ -29,10 +29,9 @@
       = image_tag "https://i.imgur.com/IDctFvl.png", style: 'height:auto;width:100%;'
     .col-lg-6
       .text-center
-        %h2 
-          Your work with intiliLex
-        Just start typing, and our plugin will automagically find the most relevant clauses from your document database. Much faster and all in one window! 
-      %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/SnZdRpjUs-M", :width => "560"}
+        %h2 Your work with intiliLex
+        Just start typing, and our plugin will automagically recommend the most relevant clauses from your document database. Much faster and all in one window! 
+      = image_tag "https://i.imgur.com/DUJ2ASa.png", style: 'height:auto;width:100%;'
 :css
   .parallax { 
     /* The image used */
@@ -86,7 +85,8 @@
       /polish photo of how it works
       /= image_tag "https://i.imgur.com/DUJ2ASa.png", style: 'height:auto;width:100%;'
       /english photo of how it works
-      = image_tag "https://i.imgur.com/UFpcwzm.png", style: 'height:auto;width:100%;'
+      %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/SnZdRpjUs-M", :width => "100%"}
+      /= image_tag "https://i.imgur.com/UFpcwzm.png", style: 'height:auto;width:100%;'
       %h6.text-center
         %small iL integrates directly with Microsoft Word and your document knowledgebase.
     .col-md-6.card.card-body
@@ -107,11 +107,11 @@
     %h2.display-4 Featured on
     %br
     .row
-      .col
+      .col-lg
         = image_tag "https://i.imgur.com/ptzzX7z.png", style: 'height:auto;width:35%;'
-      .col
+      .col-lg
         = image_tag "https://i.imgur.com/XsF0duJ.jpg", style: 'height:auto;width:55%;'
-      .col
+      .col-lg
         = image_tag "https://i.imgur.com/GmukeE0.png", style: 'height:auto;width:35%;'
 
 
