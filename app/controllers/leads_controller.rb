@@ -4,8 +4,7 @@ class LeadsController < ApplicationController
   # GET /leads
   # GET /leads.json
   def index
-    #@leads = Lead.all
-    redirect_to root_path
+    @leads = Lead.all
   end
 
   # GET /leads/new
@@ -36,6 +35,16 @@ class LeadsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to leads_url, notice: 'Lead was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  before_action :authenticate, only: :index
+
+  protected
+  
+  def authenticate
+    authenticate_or_request_with_http_basic do |username, password|
+      username == "lex" && password == "inte"
     end
   end
 
