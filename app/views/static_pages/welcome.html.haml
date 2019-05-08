@@ -1,21 +1,33 @@
 </div>
-.container
+.container-fluid
+  .row
+    .col-lg-3
+    .col-lg-6
+      .card.card-body.bg-light
+        Hot news! on May 4th 2019, inteliLex.net won the first place at the Global Legal Hackathon 2019 finals!
+        = image_tag "https://i.imgur.com/YeYpXxa.png", style: 'height:auto;width:100%;'
+        .text-right
+          %a{:href => "https://www.globallegalhackathon.com/"} Global Legal Hackathon 2019
+%hr
+.container-fluid
   .row
     .col-lg-6
-      %h2.display-4 InteliLex suggests relevant text snippets while you create legal documents.
+      %h2.display-4 InteliLex suggests relevant text snippets while you create legal documents
     .col-lg-6
       .embed-responsive.embed-responsive-16by9
         %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/moCZ-1iGBcs", :width => "560"}
       /%h6.text-center
       /  %small iL video
+
+
 %br
 .container-fluid.bg-light.text-center
   .display-4 How it works
   .row
     .col-lg-6
       %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/12alwidK0hw", :width => "560"}
-      %h6.text-center
-        %small iL integrates directly with Microsoft Word and your document knowledgebase.
+      /%h6.text-center
+      /  %small iL integrates directly with Microsoft Word and your document knowledgebase.
     .col-lg-6
       .text-left
         %br
@@ -28,6 +40,7 @@
           Be first to know when we launch!
           %p
         = link_to 'Subscribe', new_lead_path, class: 'btn btn-lg btn-warning'
+        %p
 %br
 .container-fluid
   .row
@@ -58,7 +71,7 @@
 .parallax
 
 %h2.display-4.text-center What for?
-.container
+.container-fluid
   .card-group
     .card
       .card-body.text-center.bg-light
