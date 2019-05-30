@@ -4,7 +4,7 @@
     .col-lg-3
     .col-lg-6
       .card.card-body.bg-light
-        Hot news! on May 4th 2019, inteliLex.net won the first place at the Global Legal Hackathon 2019 finals!
+        On May 4th 2019, inteliLex.net won the first place at the Global Legal Hackathon 2019 finals!
         = image_tag "https://i.imgur.com/YeYpXxa.png", style: 'height:auto;width:100%;'
         .text-right
           %a{:href => "https://www.globallegalhackathon.com/"} Global Legal Hackathon 2019
@@ -31,14 +31,15 @@
       .text-left
         %br
         %h5
-          %p 1) Download & Install inteliLex plugin
-          %p 2) Choose folders with source documents
-          %p 3) Start typing in Word. You will see recommendations in the sidebar!
+          %p 1) You will be able to install the add-in from Office Store
+          %p 2) You link to local or remote document repositories
+          %p 3) Done! Now, while working in Microsoft Word, just as you type, the tool suggests relevant provisions from other documents in your document database(s).
         %hr
         %h3 
-          Be first to know when we launch!
+          Sounds cool?
+          /Be first to know when we launch!
           %p
-        = link_to 'Subscribe', new_lead_path, class: 'btn btn-lg btn-warning'
+        = link_to 'Contact us', new_lead_path, class: 'btn btn-lg btn-warning'
         %p
 %br
 .container-fluid
@@ -54,22 +55,7 @@
         Just start typing, and our plugin will automagically recommend the most relevant clauses from your document database. Much faster and all in one window! 
       = image_tag "https://i.imgur.com/DUJ2ASa.png", style: 'height:auto;width:100%;'
   %br
-
-:css
-  .parallax { 
-    /* The image used */
-    background-image: url("https://i.imgur.com/kbOXzsH.jpg");
-    /* Set a specific height */
-    height: 300px; 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-/ Container element
-.parallax
-
+%hr
 %h2.display-4.text-center What for?
 .container-fluid
   .card-group
@@ -97,8 +83,21 @@
         %h4.card-title Compare
         %p.card-text
           %small New way to compare similar clauses.
-
-%hr
+%p
+:css
+  .parallax { 
+    /* The image used */
+    background-image: url("https://i.imgur.com/kbOXzsH.jpg");
+    /* Set a specific height */
+    height: 300px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+/ Container element
+.parallax
 .container-fluid
   .text-center
     %h2.display-4 Featured on
@@ -110,10 +109,12 @@
         = image_tag "https://i.imgur.com/XsF0duJ.jpg", style: 'height:auto;width:55%;'
       .col-lg
         = image_tag "https://i.imgur.com/GmukeE0.png", style: 'height:auto;width:35%;'
-
-
+      .col-lg
+        = image_tag "http://globallegalhackathon.com/wp-content/uploads/2017/12/GLH-512.png", style: 'height:auto;width:35%;'
+  %br
 %hr
 .container-fluid.text-center
-  %h2 Big team. Big motivation. Big plans!
+  .display-4 Big team. Big motivation. Big plans!
+  %p
   = image_tag "https://i.imgur.com/g8DC00m.jpg", style: 'height:auto;width:100%;'
 .row

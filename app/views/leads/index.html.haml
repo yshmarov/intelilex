@@ -6,6 +6,10 @@
       /%th{:colspan => "2"}
       %th
       %th Email
+      %th Last name
+      %th First name
+      %th Phone number
+      %th Company
       %th Comment
       /%th
       %th
@@ -14,6 +18,10 @@
       %tr
         %td= index +1
         %td= lead.email
+        %td= lead.last_name
+        %td= lead.first_name
+        %td= lead.phone_number
+        %td= lead.company
         %td= lead.comment
         /%td= link_to '', edit_lead_path(@lead), class: "btn btn-warning fa fa-edit btn-sm"
         %td= link_to 'Delete', lead, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-sm"
