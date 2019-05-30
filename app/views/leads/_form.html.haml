@@ -1,17 +1,14 @@
-= form_for @lead do |f|
-  - if @lead.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@lead.errors.count, "error")} prohibited this lead from being saved:"
-      %ul
-        - @lead.errors.full_messages.each do |message|
-          %li= message
-
-  .field
-    = f.label :email
-    = f.text_field :email, autofocus: true
-  %p
-  .field
-    = f.label :comment
-    = f.text_field :comment
-  .actions
-    = f.submit 'Save', class: 'btn btn-success'
+= simple_form_for @lead do |f|
+  = f.error_notification
+  = f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?
+  .form-inputs
+    = f.input :email, autofocus: true
+    = f.input :last_name
+    = f.input :first_name
+    = f.input :phone_number
+    = f.input :company
+    = f.input :comment
+  %hr
+  .form-actions
+    /= f.button :submit, class: "btn btn-success"
+    = f.submit 'Sign up', class: 'btn btn-success'

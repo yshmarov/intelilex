@@ -65,3 +65,4 @@ gem 'jquery-rails'
 gem 'haml'
 gem "haml-rails", "~> 1.0"
 gem 'font-awesome-sass', '~> 5.6.1'
+gem 'simple_form'
