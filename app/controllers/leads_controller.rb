@@ -19,7 +19,7 @@ class LeadsController < ApplicationController
 
     respond_to do |format|
       if @lead.save
-        format.html { redirect_to welcome_path, notice: "You've subscribed! You're the best!" }
+        format.html { redirect_to welcome_path, notice: "You've subscribed! We'll come back to you shortly!" }
         format.json { render :show, status: :created, location: @lead }
       else
         format.html { render :new }
