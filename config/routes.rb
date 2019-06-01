@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   get 'welcome', to: 'static_pages#welcome'
   get 'for_press', to: 'static_pages#for_press'
   get 'faq', to: 'static_pages#faq'
+  get 'features', to: 'static_pages#features'
+  get 'about_us', to: 'static_pages#about_us'
+  get 'pricing', to: 'static_pages#pricing'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

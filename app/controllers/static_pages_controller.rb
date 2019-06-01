@@ -10,6 +10,15 @@ class StaticPagesController < ApplicationController
 
   def faq
   end
+  
+  def about_us
+  end
+
+  def features
+  end
+
+  def pricing
+  end
 
   def for_press
     @links = Link.all
