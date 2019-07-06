@@ -23,4 +23,8 @@ class StaticPagesController < ApplicationController
   def for_press
     @links = Link.all
   end
+
+  def privacy_policy
+  end
+
 end

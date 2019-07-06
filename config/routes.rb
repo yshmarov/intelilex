@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'features', to: 'static_pages#features'
   get 'pricing', to: 'static_pages#pricing'
   get 'about_us', to: 'static_pages#about_us'
+  get 'privacy_policy', to: 'static_pages#privacy_policy'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
