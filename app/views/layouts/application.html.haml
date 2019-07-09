@@ -13,10 +13,11 @@
   %body
     #notice= notice
     = render 'layouts/header'
-    .card.card-header.bg-warning
-      This is the old version of our website. The new version:
-      = link_to "https://www.intelilex.net", target: :_blank do
-        here
+    .container
+      .card.card-header.bg-warning
+        This is the old version of our website.
+        = link_to "https://www.intelilex.net", target: :_blank do
+          Link to the new version
     %br
     .container-fluid
       = yield
