@@ -56,28 +56,4 @@
   = link_to 'artificiallawyer.com - The Full List – GLH2019 Winners From Around The World', "https://www.artificiallawyer.com/2019/03/05/the-full-list-glh2019-winners-from-around-the-world", :target => '_blank'
   .row
   = link_to "YaroTheSlav - Global Legal Hackathon Warsaw 22-24 Feb'19", "https://yaro-the-slav.blogspot.com/2019/03/legal-hackathon-warsaw-22-24-feb19.html", :target => '_blank'
-  
-  
-  /%h1 Listing links
-  /
-  /%table
-  /  %thead
-  /    %tr
-  /      %th Url
-  /      %th Description
-  /      %th
-  /      %th
-  /      %th
-  /
-  /  %tbody
-  /    - @links.each do |link|
-  /      %tr
-  /        %td= link.url
-  /        %td= link.description
-  /        %td= link_to 'Show', link
-  /        %td= link_to 'Edit', edit_link_path(link)
-  /        %td= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' }
-  /
-  /%br
-  /
-  /= link_to 'New Link', new_link_path
+
