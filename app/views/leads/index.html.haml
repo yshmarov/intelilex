@@ -5,6 +5,7 @@
     %tr
       /%th{:colspan => "2"}
       %th
+      %th Created
       %th Email
       %th Last name
       %th First name
@@ -16,6 +17,7 @@
   %tbody
     - @leads.each_with_index do |lead, index|
       %tr
+        %td= lead.created_at
         %td= index +1
         %td= lead.email
         %td= lead.last_name
