@@ -44,7 +44,7 @@ class LeadsController < ApplicationController
   
   def authenticate
     authenticate_or_request_with_http_basic do |username, password|
-      username == "lex" && password == "inte"
+      username == Rails.application.credentials.dig(:leads, :login) && password == Rails.application.credentials.dig(:leads, :pass)
     end
   end
 
