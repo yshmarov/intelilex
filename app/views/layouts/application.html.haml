@@ -3,7 +3,6 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
-    %meta{:content => "noindex, nofollow", :name => "robots"}/
 
     %title inteliLex - Reclaim your knowledge
     = favicon_link_tag 'iL short logo.png'
@@ -15,11 +14,11 @@
   %body
     #notice= notice
     = render 'layouts/header'
-    .container
-      .card.card-header.bg-warning
-        This is the old version of our website.
-        = link_to "https://www.intelilex.net", target: :_blank do
-          Link to the new version
+    /.container
+    /  .card.card-header.bg-warning
+    /    This is the old version of our website.
+    /    = link_to "https://www.intelilex.net", target: :_blank do
+    /      Link to the new version
     %br
     .container-fluid
       = yield
